@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2BF5C39B-3B74-4B62-A6CB-C3B07D8A98AE}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>CSharpNET</RootNamespace>
+    <AssemblyName>CSharpNET</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PdfSharp, Version=1.50.5147.0, Culture=neutral, PublicKeyToken=f94615aa0424f9eb, processorArchitecture=MSIL">
+      <HintPath>packages\PDFsharp.1.50.5147\lib\net20\PdfSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="PdfSharp.Charting, Version=1.50.5147.0, Culture=neutral, PublicKeyToken=f94615aa0424f9eb, processorArchitecture=MSIL">
+      <HintPath>packages\PDFsharp.1.50.5147\lib\net20\PdfSharp.Charting.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Mod03-04%28datatypes%29.cs" />
+    <Compile Include="Mod05%28operators%29.cs" />
+    <Compile Include="Mod08%28arrays%29.cs" />
+    <Compile Include="Mod09%28comments%29.cs" />
+    <Compile Include="Mod07%28typeconversions%29.cs" />
+    <Compile Include="Mod06%28nullabletypes%29.cs" />
+    <Compile Include="Mod99.100%28func_delegate%29.cs" />
+    <Compile Include="Mod99.101-102%28async_await%29.cs" />
+    <Compile Include="Mod40-44%28exceptionhandling%29.cs" />
+    <Compile Include="Mod13-15%28loops%29.cs" />
+    <Compile Include="Mod16-17%28methods_params%29.cs" />
+    <Compile Include="Mod18%28namespace%29.cs" />
+    <Compile Include="Mod19-20%28classes%29.cs" />
+    <Compile Include="Mod21-22%28inheritance%29.cs" />
+    <Compile Include="Mod23-25%28polymorphism%29.cs" />
+    <Compile Include="Mod26-27%28properties%29.cs" />
+    <Compile Include="Mod28-29%28structs%29.cs" />
+    <Compile Include="Mod30-31%28interfaces%29.cs" />
+    <Compile Include="Mod32-33%28abstractclass%29.cs" />
+    <Compile Include="Mod34-35.cs" />
+    <Compile Include="Mod36-39%28delegates%29.cs" />
+    <Compile Include="Mod45-47%28enums%29.cs" />
+    <Compile Include="Mod48-51%28accessmodifiers%29.cs" />
+    <Compile Include="Mod52%28attributes%29.cs" />
+    <Compile Include="Mod53-55%28reflections%29.cs" />
+    <Compile Include="Mod56%28Generics%29.cs" />
+    <Compile Include="Mod57-60.cs" />
+    <Compile Include="Mod61-63%28partialclass%29.cs" />
+    <Compile Include="Mod64-66%28indexers%29.cs" />
+    <Compile Include="Mod71%28snippets%29.cs" />
+    <Compile Include="Mod72-73%28dictionary%29.cs" />
+    <Compile Include="Mod74-80%28lists%29.cs" />
+    <Compile Include="Mod81%28dict_vs_list%29.cs" />
+    <Compile Include="Mod82,84%28queue%29.cs" />
+    <Compile Include="Mod83,85%28stack%29.cs" />
+    <Compile Include="Mod86-97%28multithreading%29.cs" />
+    <Compile Include="Mod10-12%28conditional%29.cs" />
+    <Compile Include="Mod98%28anonymousmethods%29.cs" />
+    <Compile Include="Mod99%28lamda%29.cs" />
+    <Compile Include="NSClass1.cs" />
+    <Compile Include="Mod01-02.cs" />
+    <Compile Include="PartialClass.cs" />
+    <Compile Include="PartialMethodClass.cs" />
+    <Compile Include="ParticalClassOne.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Mod67-70%28optparamsformethods%29.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AssemblyOne\AssemblyOne.csproj">
+      <Project>{be09edae-f290-473b-a863-e96a6aed5bc8}</Project>
+      <Name>AssemblyOne</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AssemblyTwo\AssemblyTwo.csproj">
+      <Project>{aa3a8610-917d-4fef-91f9-76c78cbf3b0e}</Project>
+      <Name>AssemblyTwo</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
